@@ -16,7 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from api.views import ToppingView, ToppingListView, PizzaView, PizzaListView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('toppings/', ToppingListView.as_view(), name='toppings'),
+    path('toppings/<int:pk>', ToppingView.as_view(), name='topping-detail'),
+    path('pizzas/', PizzaListView.as_view(), name='pizzas'),
+    path('pizzas/<int:pk>', PizzaView.as_view(), name='pizza-detail')
 ]
