@@ -7,9 +7,13 @@ function Pizza({pizza}) {
             <Card className='shadow-sm rounded m-3 p-2'>
                 <Card.Title>{pizza.name}</Card.Title>
                 <Card.Text>
-                    Mała: {pizza.price_small}<br/>
-                    Średnia: {pizza.price_medium}<br/>
-                    Duża: {pizza.price_large}<br/>
+                    <ul>
+                        {pizza.toppings.map((topping) => {
+                            return <li key={topping.id}>{topping.name}</li>
+                        })}
+                    </ul>
+                    <br/>
+                    Mała: {pizza.price_small} Średnia: {pizza.price_medium} Duża: {pizza.price_large}
                 </Card.Text>
             </Card>
         </Col>
