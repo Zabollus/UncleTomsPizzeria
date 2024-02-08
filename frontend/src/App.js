@@ -1,11 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Menu from "./components/Menu"
 import FormTopping from "./components/FormTopping"
 
 function App() {
   return (
-    <FormTopping/>
+    <>
+        <Menu/>
+        <FormTopping/>
+    </>
   );
 }
 
