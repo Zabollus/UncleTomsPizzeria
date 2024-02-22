@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 
 function Pizza({pizza}) {
     return (
@@ -13,7 +13,9 @@ function Pizza({pizza}) {
                         })}
                     </ul>
                     <br/>
-                    Mała: {pizza.price_small} Średnia: {pizza.price_medium} Duża: {pizza.price_large}
+                    Mała: {pizza.price_small} <Button>Zamów</Button> <br/>
+                    Średnia: {pizza.price_medium} <Button>Zamów</Button> <br/>
+                    Duża: {pizza.price_large} <Button>Zamów</Button> <br/>
                 </Card.Text>
             </Card>
         </Col>
