@@ -8,8 +8,8 @@ function MyNavbar() {
             <Container>
                 <Navbar.Brand href='/' style={{color:"white"}}>Uncle Toms Pizzeria</Navbar.Brand>
                 <Nav className='me-auto'>
-                    <Nav.Link href='add/pizza' style={{color:"white"}}>Dodaj pizzę<Nav.Link>
-                    <Nav.Link href='add/topping' style={{color:"white"}}>Dodaj składnik<Nav.Link>
+                    <Nav.Link href='/add/pizza' style={{color:"white"}}>Dodaj pizzę</Nav.Link>
+                    <Nav.Link href='/add/topping' style={{color:"white"}}>Dodaj składnik</Nav.Link>
                 </Nav>
             </Container>
         </Navbar>
